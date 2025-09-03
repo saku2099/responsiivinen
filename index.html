@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monday Times</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f2f2f2;
+    }
+
+    header {
+      background: #444;
+      color: white;
+      padding: 10px;
+      font-size: 1.5em;
+    }
+
+    nav {
+      background: #ddd;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    nav a {
+      display: block;
+      text-decoration: none;
+      color: black;
+      padding: 5px;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: 150px 1fr 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    section {
+      background: #ddd;
+      padding: 15px;
+      border-radius: 5px;
+    }
+
+    article {
+      background: #fff;
+      margin-bottom: 15px;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background: #444;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 900px) {
+      main {
+        grid-template-columns: 150px 1fr;
+      }
+      .sektori2 {
+        grid-column: span 2;
+      }
+    }
+
+    @media (max-width: 600px) {
+      main {
+        display: block;
+      }
+
+      nav {
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      nav a {
+        padding: 10px;
+      }
+
+      section {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>Monday Times</header>
+
+  <main>
+    <nav>
+      <a href="#">koti</a>
+      <a href="#">uutiset</a>
+      <a href="#">Tapahtumat</a>
+
+    </nav>
+
+    <section class="sectori1">
+      <h2>Uutiset</h2>
+      <article>
+        <h2>News Article</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+      </article>
+      <article>
+        <h2>News Article</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+      </article>
+    </section>
+
+    <section class="sektori2">
+      <h2>Tapahtumat</h2>
+      <article>
+        <h2>News Article</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+      </article>
+      <article>
+        <h2>News Article</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Monday Times. All rights reserved.
+  </footer>
+</body>
+</html>
